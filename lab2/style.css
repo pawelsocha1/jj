@@ -7,3 +7,15 @@ body {
     height: 5px;
     background-color: red;
 }
+#columns {
+    display: flex;
+    background-color: royalblue;
+    
+}
+#column-left {
+    width: 300px;
+
+}
+#column-right{
+    width:400px;
+}
