@@ -1,0 +1,115 @@
+body {
+    
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+}
+
+
+.menu {
+    
+    background-color: #252a3a;
+    padding-top:10px;
+    padding-bottom:15px;
+   
+    
+}
+
+.menu:hover{
+    height:100%;  
+    
+}
+.menu p{
+    
+    padding-top:10px;
+    padding-left:20px;
+    color:rgb(34, 146, 180);
+    
+}
+
+
+.reszta_menu{
+    color:white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+#przycisk{
+    outline:none;
+    border:none;
+    color:cornflowerblue;
+    background:none;
+    padding-left: 300px;
+
+}
+#Compose {
+    border-radius:20px;
+    padding: 8px;
+    margin:  16px;
+    background-color: #1B98F8;
+    border: none;
+    color: white;
+    width: 36%;
+margin-left: 32%;
+margin-right: 32%
+}
+
+
+.wiadomosci {
+    background-color: white;
+    display:grid;
+    height: 100%;
+    grid-template-columns: 1fr 6fr;
+    border-top:14px;
+    border-bottom: 1px solid rgb(212,212,212);
+    overflow:hidden;
+
+}
+.wiadomosci:hover {
+    background-color: #eee;
+}
+
+.tresc {
+    color:black;
+}
+
+.avatar {
+    width:42px;
+    height:42px;
+    border-radius: 3px;
+    margin-right:8px;
+    margin-top: 20px;
+}
+.imie {
+    font-size: 13px;
+    color:#999;
+    text-transform: uppercase;
+    border-bottom: 0px;
+}
+.maile {
+    border-bottom: 1px solid rgb(212,212,212);
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+#tytul {
+   color:black;
+   font-size: 32px;
+}
+.przyciski {
+    border-top:6px;
+    border-bottom:26px;
+    color: #666;
+    border-radius:20px;
+    size:16px;
+}
+#info {
+    font-size:16px;
+    color:black;
+}
+.from {
+    color: #1b90f8;
+}
+.tresci {
+    font-size:16px;
+    margin:16px;
+}
