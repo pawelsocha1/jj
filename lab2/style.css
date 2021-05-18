@@ -1,85 +1,138 @@
-body {
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    background-color: #FAFAFA;
     margin: 0;
-    /* zmiana sposobu pozycjonowania elementów */
+    padding: 0;
     display: flex;
-    /* flex w układzie kolumnowym */
     flex-direction: column;
-    /* wyrównanie do środka w tzw. cross-axis (więcej na konw.) */
     align-items: center;
 }
-#header-bar{
+
+.main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header-bar{
     height: 5px;
     background-color: #242e30;
     width: 100%;
+
 }
-#main {
-    width: 1000px;
-    /* stary sposób środkowania elementów - dalej używany na stronach */
-    /* margin: 0 auto; */
-}
-#columns {
+
+.nav-bar{
+    margin-top: 20px;
     display: flex;
-    background-color: antiquewhite;
-    /* wyrównanie elementów do krawędzi - wolna przestrzeń pomiędzy elementami */
     justify-content: space-between;
-    padding-bottom: 40px;
-    border-bottom: 2px solid #444;
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc;
 }
-#column-left {
-    width: 400px;
-    text-align: center;
-    font-size: 14px;
-    /* wysokość wiersza tekstu */
-    line-height: 24px;
+
+.logo{
+    width: 50%;
 }
-#column-left a {
-    /* kapitalizacja liter*/
+
+.nav{
+    width: 50%;
+    text-align: right;
+    margin: auto;
+}
+
+.nav a{
     text-transform: uppercase;
-    /* podkreślenie off */
     text-decoration: none;
-    font-size: 20px;
+    font-weight: bold;
+    color: #6CB3D1;
+    margin-left: 30px;
 }
-#column-right {
-    width: 400px;
+
+.title{
+    text-align: center;
+    padding: 60px 30px;
 }
-#circles {
+
+.title h1{
+    text-align: center;
+    font-weight: 200;
+    color: #6CB3D1;
+    margin: 0 10px;
+}
+
+.con{
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    padding: 35px;
+}
+
+.text{
+    width: 50%;
+    padding: 0 10px;
+}
+
+.text span p{
+    font-weight: bold;
+}
+
+.circles{
     display: flex;
     justify-content: center;
+    padding: 60px 0;
 }
-#circle {
+
+.circle{
+    display: flex;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    align-items:center;
+    justify-content:center;
+    font-weight: bold;
     width: 200px;
     height: 200px;
-    background: rgb(39, 148, 199);
-    /* zaokrąglenie narożników */
+    margin: -20px;
+    background-color: #6CB3D2;
+    opacity: .7;
     border-radius: 50%;
-    /* przezroczystość elementu (oraz jego zawartości) */
-    opacity: 0.7;
 }
-#circle2 {
-    width: 200px;
-    height: 200px;
-    background: rgb(39, 148, 199);
-    border-radius: 50%;
-    margin-left: -40px;
-    opacity: 0.7;
+
+.circle:hover{
+    opacity: 1;
+    cursor: pointer;
 }
-/* :hover - style stosowany gdy element ma stan "hover" - po najechaniu myszą */
-#circle:hover {
-    opacity: 0.85;
+
+.idk{
+    display: flex;
+    justify-content: inherit;
 }
-#circle2:hover {
-    opacity: 0.85;
+
+.idkfr{
+    width: 50%;
+    font-size: .9rem;
 }
-#footer {
+
+.idkfr h2 {
+    border-bottom: solid 2px #CCCCCC;
+    padding:  10px 0;
+    margin:  10px 10px;
+}
+
+.idkfr ul{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.idkfr p{
+    padding: 0 10px;
+}
+
+.footer{
+    text-align: center;
     width: 100%;
     margin-top: 40px;
-    padding: 40px;
+    padding-top: 40px;
     color: #fff;
     height: 200px;
-    /* cały element ma domyślnie zadany kolor tła */
     background-color: #242e30;
-    /* do tego na samej górze w tle jest grafika zabek.jpg */
     background-image: url(zabek.jpg);
-    /* domyślne powtarzanie grafiki w tle zmieniamy na powtarzanie jedynie w poziomie */
     background-repeat: repeat-x;
 }
