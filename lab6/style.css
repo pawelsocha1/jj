@@ -1,0 +1,38 @@
+body {
+margin:0;
+}
+
+.header-container {
+    background-image: url(photos/masthead@2x.jpg);  
+    background-position: top center;
+    background-size: cover;
+}
+ 
+.wrapper-clearfix {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  list-style: none;
+}
+
+.nav a {
+	font-size: 20px;
+
+}
+#masthead{
+	display: block;
+	height: 1050px;
+}
+
+.clearfix {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    margin-left:300px;
+    margin-right: 300px;
+    
+}
