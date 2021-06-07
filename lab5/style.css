@@ -41,5 +41,7 @@ button {
     border-color:whitesmoke;
     width:300px;
     padding:10px;
-   
+    margin:50px;
+    position:relative;
+    left:40%;
 }

@@ -1,0 +1,119 @@
+body {
+    margin:0;
+    background-color: #f3f4f5; 
+    }
+    main {
+        margin-left:300px;
+        margin-right:300px;
+    }
+    
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        list-style: none;
+      }
+      
+      .nav a {
+          
+          font-size: 20px;
+          padding: 0.3em 1.2em;
+          border-radius: 3px;
+      } 
+      .active {
+          background-color: #ffc000;
+      } 
+      .nav a:hover {
+          background-color: #646d72;
+      }
+
+      .wrapper-clearfix {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid #cad2d7;
+        margin-left:300px;
+        padding-top:50px;
+        padding-bottom:30px;
+        margin-right:300px;
+      }
+
+      .style1 {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          border-bottom: 1px solid #cad2d7;
+      }
+       .text h1 {
+           font-size: 36px;
+           color:#2d3438;
+       }
+
+       .lead {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:24px;
+       }
+
+       .more {
+        padding: 5px 0px 8px 22px;
+        
+       }
+      
+      
+      .gallery {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+      }
+      .photos img {
+          width:336px;
+          height:200px;
+          margin-top: 16px;
+          margin-bottom:16px;
+          border:6px solid #fff;
+      }
+      .style2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-bottom: 1px solid #cad2d7;
+      }
+      .bigphoto img {
+          width: 860px;
+          height:425px;
+          margin-top: 16px;
+          margin-bottom:16px;
+          border:6px solid #fff;
+      }
+    
+      .style3 {
+          display:grid;
+          grid-template-columns: 1fr 2fr;
+      }
+
+      .main-wrapper-clearfix {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid #cad2d7;
+        font-size: 5px;
+        color: #9fa6aa;
+        padding: 50px 300px 50px 300px;
+        margin-top: 20px;
+        margin-left:300px;
+        margin-right:300px;
+    }
+    
+    .foot-left{
+        font-size: 14px;
+    }
+    
+    .foot-right {
+        position:relative;
+        left:100%;
+        color: #9fa6aa;
+    }
+    
+    .social {
+        filter: invert(90%);
+        size:50px;
+    }

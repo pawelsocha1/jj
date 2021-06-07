@@ -1,6 +1,7 @@
 
 body {
 margin:0;
+
 }
 
 
@@ -100,7 +101,7 @@ a, a:hover, a:focus, a:active {
 
 .foot-right {
     position:relative;
-    left:80%;
+    left:100%;
     color: #9fa6aa;
 }
 
