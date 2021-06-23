@@ -13,15 +13,30 @@
             <a href="index.html" class="logo"><img src="photos/logo@2x.png" alt="Logo" /></a>
             <nav>
                    <ul class="nav">
-                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a  href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="styles.html">Styles</a></li>
+                    <li><a class="active" href="styles.html">Styles</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li class="last"><a href="contact.html">Contact</a></li>
                 </ul>                	
             </nav>
         </header>
+        
+        <header class="burger-menu">
+          <a href="/" class="logo">MENU</a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="styles.html">Styles</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </header>
+
         <main>
           <div class="heading1">
             
@@ -48,7 +63,7 @@
 
                 <p><a href="#" class="more">More Link</a>
                 </div>
-                  <div class="sidebar">
+                  <aside class="sidebar">
                     <h2>Sidebar Title</h2>
                     <p>Donec id elilit non mi porta gravida</p>
                     <p>Liamcorper nulla non metus auctor</p>
@@ -56,18 +71,18 @@
                     <p>2.<a>Acusvel augue laoreet rutrum</a></p>
                     <p>Donec id elilit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
                     <img src="http://make-lemonade.co/themes/selfy/img/mock2.jpg" alt="" id="mock"/>"
-                  </div>
+                  </aside>
             </div>
                   <h4>Horizontal Rules</h4>
                   <h4>Buttons Style</h4>
                         
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales <span class="highlight">Malaria</span> non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+                  <div class="buttons">
+                  <a href="#" class="regular">Regular Button</a>
                   
-                  <a href="#" class="btn">Regular Button</a>
+                  <a href="#" class="small">Small Button</a>
                   
-                  <a href="#" class="btn small-btn green">Small Button</a>
-                  
-                  <a href="#" class="btn xsmall-btn">Extra Small Button</a>
+                  <a href="#" class="extrasmall">Extra Small Button</a>
           </div>
                      
             <div class="images">       
@@ -95,50 +110,41 @@
                         
                         
                        	
-                        <table class="footable">
+                        <table class="table">
                           <thead>
                             <tr>
-                              <th data-class="expand">
-                                No#
-                              </th>
-                              <th>
-                                Size
-                              </th>
-                              <th data-hide="phone,tablet">
-                                Title
-                              </th>
-                              <th data-hide="phone,tablet">
-                                DOB
-                              </th>
-                         
+                              <th>No#</th>
+                              <th>Size</th>
+                              <th>Title</th>
+                              <th>DOB</th>
                             </tr>
                           </thead>
                           <tbody>
-                           	<tr>
-                           		<td>sell</td> 
-                           		<td>sell</td> 
-                           		<td>sell</td> 
-                           		<td>sell</td>      
-                             </tr>
-                             <tr>
-                             	<td>sell</td> 
-                             	<td>sell</td> 
-                             	<td>sell</td> 
-                             	<td>sell</td>       
-                             </tr>
-                             <tr>
-                             	<td>sell</td> 
-                             	<td>sell</td> 
-                             	<td>sell</td> 
-                             	<td>sell</td>     
-                             </tr>
-                             <tr>
-                             	<td>sell</td> 
-                             	<td>sell</td> 
-                             	<td>sell</td> 
-                             	<td>sell</td>       
-                             </tr>     
-                           </tbody>
+                            <tr>
+                              <td>sell</td>
+                              <td>sell</td>
+                              <td>sell</td>
+                              <td>sell</td>
+                            </tr>
+                            <tr>
+                              <td>sell</td>
+                              <td>sell</td>
+                              <td>sell</td>
+                              <td>sell</td>
+                            </tr>
+                            <tr>
+                              <td>sell</td>
+                              <td>sell</td>
+                              <td>sell</td>
+                              <td>sell</td>
+                            </tr>
+                            <tr>
+                              <td>sell</td>
+                              <td>sell</td>
+                              <td>sell</td>
+                              <td>sell</td>
+                            </tr>
+                          </tbody>
                         </table>
                         
                         
@@ -209,13 +215,14 @@
                          ///////////////////////////////////////
                          	Half width Columns 50%
                          //////////////////////////////////// --> 
-                        <div class="clearfix">
-                        	<div class="half">	
+                        <div class="columns">
+                          <div class="halves">
+                        	<div class="1half">	
                         		<h4>Column Halves</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
                        
-                        	<div class="half last">
+                        	<div class="2half">
                         		<h4>Column Halves</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
@@ -228,7 +235,7 @@
                         <!-- ///////////////////////////////////
                         	Thirds width Columns 30%
                         //////////////////////////////////// -->  
-                        <div class="clearfix">
+                        <div class="thirds">
                         	<div class="third">	
                         		<h4>Column Thirds</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
@@ -239,7 +246,7 @@
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
                         
-                        	<div class="third last">
+                        	<div class="third">
                         		<h4>Column Thirds</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
 	                        </div>
@@ -251,23 +258,23 @@
                         <!-- ///////////////////////////////////
                         	Quarter width Columns 25%
                         //////////////////////////////////// --> 
-                        <div class="clearfix">
-                        	<div class="fourths">	
+                        <div class="fourths">
+                        	<div class="fourth">	
                         		<h4>Column Fourths</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
                         
-                        	<div class="fourths">
+                        	<div class="fourth">
                         		<h4>Column Fourths</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
                         
-                        	<div class="fourths">
+                        	<div class="fourth">
                         		<h4>Column Fourths</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
                         
-                        	<div class="fourths last">
+                        	<div class="fourth">
                         		<h4>Column Fourths</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
@@ -283,18 +290,18 @@
                         ///////////////////////////////////////
                         	Columns - 25% 25% 50%
                         //////////////////////////////////// --> 
-                        <div class="clearfix">
-                        	<div class="fourths">	
+                        <div class="nwnw">
+                        	<div class="fourth">	
                         		<h4>Column Fourths</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
                         
-                        	<div class="fourths">
+                        	<div class="fourth">
                         		<h4>Column Fourths</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
                         
-                       		<div class="half last">
+                       		<div class="half">
                         		<h4>Column Half</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
@@ -307,13 +314,13 @@
                         <!-- ///////////////////////////////////
                         	Columns - 25% 75%
                         //////////////////////////////////// --> 
-                         <div class="clearfix">
-                         	<div class="fourths">	
+                         <div class="nwnwnw">
+                         	<div class="fourth">	
                          		<h4>Column Fourths</h4>
                          		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                          	</div>
                          
-                         	<div class="three-fourths last">
+                         	<div class="three-fourths">
                          		<h4>Column Three Fourths</h4>
                          		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                          		<p>Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.</p>
@@ -326,18 +333,18 @@
                         <!-- ///////////////////////////////////
                         	Columns - 60% 30%
                         //////////////////////////////////// -->
-                        <div class="clearfix">
+                        <div class="nw">
                         	<div class="two-third">	
                         		<h4>Column Two-Thirds</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Etiam bibendum iaculis liber.</p>
                         	</div>
                         
-                       		<div class="third last">
+                       		<div class="third">
                         		<h4>Column Thirds</h4>
                         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                         	</div>
                         </div>
-                        
+                      </div>
                         
                         
                         <hr/> 
@@ -399,27 +406,22 @@
                          <iframe src="http://player.vimeo.com/video/14074949?color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                         
             </main>               
-                         <footer>
+            <footer>
   
-                            <div class="main-wrapper-clearfix">
-                                <div class="foot-left">
-                                    <a href="index.html" class="logo-foot"><img src="photos/logo-foot@2x.png" alt="logo" /></a>
-                                    © Copyright Selfy 2013
-                                </div>
-                                
-                                    <div class="foot-right">
-                                        <a href="#" class="social-link"><img src="photos/icon-facebook@2x.png" alt="Facebook" class="social" /></a>
-                                        <a href="#" class="social-link"><img src="photos/icon-twitter@2x.png" alt="Facebook" class="social" /></a>
-                                        <a href="#" class="social-link"><img src="photos/icon-linkedin@2x.png" alt="Facebook" class="social" /></a>
-                                    </div>		
-                            </div>
-                        </footer>            
+              <div class="main-wrapper-clearfix">
+                  <div class="foot-left">
+                      <a href="index.html" class="logo-foot"><img src="photos/logo-foot@2x.png" alt="logo" />© Copyright Selfy 2013</a>
+                      
+                  </div>
+                  
+                      <div class="foot-right">
+                          <a href="#" class="social-link"><img src="photos/icon-facebook@2x.png" alt="Facebook" class="social" /></a>
+                          <a href="#" class="social-link"><img src="photos/icon-twitter@2x.png" alt="Facebook" class="social" /></a>
+                          <a href="#" class="social-link"><img src="photos/icon-linkedin@2x.png" alt="Facebook" class="social" /></a>
+                      </div>		
+              </div>
+          </footer>        
                                                                                                
 				
 
-        
-    
-</html>
-
-</main>
 </body>
